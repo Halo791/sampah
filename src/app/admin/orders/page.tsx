@@ -2,6 +2,7 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { orders } from '@/lib/data';
 import { Badge } from '@/components/ui/badge';
+import { formatPrice } from '@/lib/utils';
 
 export default function OrdersPage() {
   return (
@@ -39,7 +40,7 @@ export default function OrdersPage() {
                   </Badge>
                 </TableCell>
                 <TableCell>{new Date(order.orderDate).toLocaleDateString()}</TableCell>
-                <TableCell className="text-right">${order.total.toLocaleString()}</TableCell>
+                <TableCell className="text-right">{formatPrice(order.total)}</TableCell>
               </TableRow>
             ))}
           </TableBody>

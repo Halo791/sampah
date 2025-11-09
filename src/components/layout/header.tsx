@@ -7,7 +7,7 @@ import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 export function Header() {
   const navItems = [
     { href: '/', label: 'Home' },
-    { href: '#products', label: 'Products' },
+    { href: '/products', label: 'Products' },
     { href: '#about', label: 'About Us' },
     { href: '/admin/dashboard', label: 'Admin' },
   ];

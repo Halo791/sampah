@@ -3,14 +3,15 @@ import { BarChart as BarChartIcon, DollarSign, Package, ShoppingCart } from 'luc
 import { orders } from '@/lib/data';
 import { Bar, BarChart, CartesianGrid, ResponsiveContainer, XAxis, YAxis } from 'recharts';
 import { ChartContainer, ChartTooltip, ChartTooltipContent } from '@/components/ui/chart';
+import { formatPrice } from '@/lib/utils';
 
 const chartData = [
-  { month: 'January', total: Math.floor(Math.random() * 5000) + 1000 },
-  { month: 'February', total: Math.floor(Math.random() * 5000) + 1000 },
-  { month: 'March', total: Math.floor(Math.random() * 5000) + 1000 },
-  { month: 'April', total: Math.floor(Math.random() * 5000) + 1000 },
-  { month: 'May', total: Math.floor(Math.random() * 5000) + 1000 },
-  { month: 'June', total: Math.floor(Math.random() * 5000) + 1000 },
+  { month: 'January', total: Math.floor(Math.random() * 50000000) + 10000000 },
+  { month: 'February', total: Math.floor(Math.random() * 50000000) + 10000000 },
+  { month: 'March', total: Math.floor(Math.random() * 50000000) + 10000000 },
+  { month: 'April', total: Math.floor(Math.random() * 50000000) + 10000000 },
+  { month: 'May', total: Math.floor(Math.random() * 50000000) + 10000000 },
+  { month: 'June', total: Math.floor(Math.random() * 50000000) + 10000000 },
 ];
 
 const chartConfig = {
@@ -36,7 +37,7 @@ export default function DashboardPage() {
             <DollarSign className="h-4 w-4 text-muted-foreground" />
           </CardHeader>
           <CardContent>
-            <div className="text-2xl font-bold">${totalRevenue.toLocaleString()}</div>
+            <div className="text-2xl font-bold">{formatPrice(totalRevenue)}</div>
             <p className="text-xs text-muted-foreground">+20.1% from last month</p>
           </CardContent>
         </Card>
@@ -87,8 +88,13 @@ export default function DashboardPage() {
                 tickMargin={8}
                 tickFormatter={(value) => value.slice(0, 3)}
               />
-              <YAxis tickLine={false} axisLine={false} tickMargin={8} />
-              <ChartTooltip cursor={false} content={<ChartTooltipContent />} />
+              <YAxis
+                tickLine={false}
+                axisLine={false}
+                tickMargin={8}
+                tickFormatter={(value) => formatPrice(value as number).slice(0, -3) + ' Jt'}
+              />
+              <ChartTooltip cursor={false} content={<ChartTooltipContent formatter={(value) => formatPrice(value as number)} />} />
               <Bar dataKey="total" fill="var(--color-total)" radius={4} />
             </BarChart>
           </ChartContainer>

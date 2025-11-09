@@ -34,7 +34,7 @@ export default function Home() {
               berkualitas kami.
             </p>
             <Button asChild size="lg" className="mt-8 bg-primary text-primary-foreground hover:bg-primary/90">
-              <Link href="#products">
+              <Link href="/products">
                 Lihat Produk <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
@@ -83,9 +83,14 @@ export default function Home() {
             <p className="mt-2 text-lg text-muted-foreground">Jelajahi berbagai material daur ulang berkualitas kami.</p>
           </div>
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
-            {products.map((product) => (
+            {products.slice(0, 4).map((product) => (
               <ProductCard key={product.id} product={product} />
             ))}
+          </div>
+          <div className="mt-12 text-center">
+            <Button asChild size="lg">
+              <Link href="/products">Lihat Semua Produk</Link>
+            </Button>
           </div>
         </div>
       </section>
