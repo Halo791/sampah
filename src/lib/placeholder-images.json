@@ -1,3 +1,46 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-image",
+      "description": "A pile of sorted recyclable plastic bottles.",
+      "imageUrl": "https://images.unsplash.com/photo-1666804855649-77057e76281c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxyZWN5Y2xpbmclMjBwbGFzdGljfGVufDB8fHx8MTc2MjY1MzIwMXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "recycling plastic"
+    },
+    {
+      "id": "hdpe-pellets",
+      "description": "Close-up of white HDPE plastic pellets.",
+      "imageUrl": "https://images.unsplash.com/photo-1751606803218-67f4b896fc4e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwbGFzdGljJTIwcGVsbGV0c3xlbnwwfHx8fDE3NjI2Njg5NDd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "plastic pellets"
+    },
+    {
+      "id": "pet-flakes",
+      "description": "Colorful PET plastic flakes in a container.",
+      "imageUrl": "https://images.unsplash.com/photo-1677408491909-3a7e8581d64c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cGxhc3RpYyUyMGZsYWtlc3xlbnwwfHx8fDE3NjI2Njg5NDd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "plastic flakes"
+    },
+    {
+      "id": "ldpe-film",
+      "description": "Rolls of recycled LDPE film.",
+      "imageUrl": "https://images.unsplash.com/photo-1752583075451-add8c904b5f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxwbGFzdGljJTIwZmlsbXxlbnwwfHx8fDE3NjI2Njg5NDd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "plastic film"
+    },
+    {
+      "id": "pp-granules",
+      "description": "Black polypropylene (PP) granules.",
+      "imageUrl": "https://images.unsplash.com/photo-1745192621767-0393e7161f11?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxwbGFzdGljJTIwZ3JhbnVsZXN8ZW58MHx8fHwxNzYyNjY4OTQ3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "plastic granules"
+    },
+    {
+      "id": "about-us",
+      "description": "Community members working together at a recycling center.",
+      "imageUrl": "https://images.unsplash.com/photo-1760009449712-09befce78964?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjb21tdW5pdHklMjByZWN5Y2xpbmd8ZW58MHx8fHwxNzYyNjY4OTQ3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "community recycling"
+    },
+    {
+      "id": "login-background",
+      "description": "Abstract background with green and beige tones.",
+      "imageUrl": "https://images.unsplash.com/photo-1593781243220-51578354c57d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxncmVlbiUyMHRleHR1cmV8ZW58MHx8fHwxNzYyNjIwODY3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "green texture"
+    }
+  ]
 }
