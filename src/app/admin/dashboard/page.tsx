@@ -1,11 +1,14 @@
+'use client';
+
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { BarChart as BarChartIcon, DollarSign, Package, ShoppingCart } from 'lucide-react';
 import { orders } from '@/lib/data';
-import { Bar, BarChart, CartesianGrid, ResponsiveContainer, XAxis, YAxis } from 'recharts';
+import { Bar, BarChart, CartesianGrid, XAxis, YAxis } from 'recharts';
 import { ChartContainer, ChartTooltip, ChartTooltipContent } from '@/components/ui/chart';
 import { formatPrice } from '@/lib/utils';
+import { useEffect, useState } from 'react';
 
-const chartData = [
+const generateChartData = () => [
   { month: 'January', total: Math.floor(Math.random() * 50000000) + 10000000 },
   { month: 'February', total: Math.floor(Math.random() * 50000000) + 10000000 },
   { month: 'March', total: Math.floor(Math.random() * 50000000) + 10000000 },
@@ -22,6 +25,12 @@ const chartConfig = {
 };
 
 export default function DashboardPage() {
+  const [chartData, setChartData] = useState<any[]>([]);
+
+  useEffect(() => {
+    setChartData(generateChartData());
+  }, []);
+
   const totalRevenue = orders.reduce((sum, order) => sum + order.total, 0);
   const totalOrders = orders.length;
   const pendingOrders = orders.filter((o) => o.status === 'Pending').length;
