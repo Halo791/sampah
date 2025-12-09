@@ -27,7 +27,7 @@ export default function Home() {
         <div className="relative container mx-auto flex h-full max-w-7xl flex-col items-center justify-center px-4 text-center text-primary-foreground">
           <div className="rounded-lg bg-black/30 p-8 backdrop-blur-sm">
             <h1 className="font-headline text-4xl font-bold md:text-6xl">
-              Memberdayakan Komunitas, Melestarikan Bumi
+              Pengelolaan Sampah Mandiri RW 07 Desa Junrejo
             </h1>
             <p className="mt-4 max-w-2xl text-lg md:text-xl">
               Bank Sampah RW 07 Junrejo mengubah sampah menjadi sumber daya berharga. Jelajahi produk daur ulang
