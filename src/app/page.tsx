@@ -29,10 +29,6 @@ export default function Home() {
             <h1 className="font-headline text-4xl font-bold md:text-6xl">
               Pengelolaan Sampah Mandiri RW 07 Desa Junrejo
             </h1>
-            <p className="mt-4 max-w-2xl text-lg md:text-xl">
-              Bank Sampah RW 07 Junrejo mengubah sampah menjadi sumber daya berharga. Jelajahi produk daur ulang
-              berkualitas kami.
-            </p>
             <Button asChild size="lg" className="mt-8 bg-primary text-primary-foreground hover:bg-primary/90">
               <Link href="/products">
                 Lihat Produk <ArrowRight className="ml-2 h-5 w-5" />
